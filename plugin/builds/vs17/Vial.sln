@@ -1,5 +1,6 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2017
+# Visual Studio 15
 
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vial - Standalone Plugin", "Vial_StandalonePlugin.vcxproj", "{474750D8-FF1F-4B84-B4D9-BCC2046C1126}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -14,9 +15,12 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vial - VST3", "Vial_VST3.vcxproj", "{D6BFF91B-8307-9FCA-EAD1-57D1E3F145F5}"
 	ProjectSection(ProjectDependencies) = postProject
 		{9F34C515-A6D0-6B34-28E8-3F6256757BE8} = {9F34C515-A6D0-6B34-28E8-3F6256757BE8}
+		{FBA9BA0D-24BE-231E-D6C2-4A4B1147B731} = {FBA9BA0D-24BE-231E-D6C2-4A4B1147B731}
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vial - Shared Code", "Vial_SharedCode.vcxproj", "{9F34C515-A6D0-6B34-28E8-3F6256757BE8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Vial - VST3 Manifest Helper", "Vial_VST3ManifestHelper.vcxproj", "{FBA9BA0D-24BE-231E-D6C2-4A4B1147B731}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,6 +44,10 @@ Global
 		{9F34C515-A6D0-6B34-28E8-3F6256757BE8}.Debug|x64.Build.0 = Debug|x64
 		{9F34C515-A6D0-6B34-28E8-3F6256757BE8}.Release|x64.ActiveCfg = Release|x64
 		{9F34C515-A6D0-6B34-28E8-3F6256757BE8}.Release|x64.Build.0 = Release|x64
+		{FBA9BA0D-24BE-231E-D6C2-4A4B1147B731}.Debug|x64.ActiveCfg = Debug|x64
+		{FBA9BA0D-24BE-231E-D6C2-4A4B1147B731}.Debug|x64.Build.0 = Debug|x64
+		{FBA9BA0D-24BE-231E-D6C2-4A4B1147B731}.Release|x64.ActiveCfg = Release|x64
+		{FBA9BA0D-24BE-231E-D6C2-4A4B1147B731}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

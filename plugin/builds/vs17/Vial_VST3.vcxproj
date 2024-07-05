@@ -44,7 +44,7 @@
   </ImportGroup>
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <TargetExt>.vst3</TargetExt>
+    <TargetExt>.dll</TargetExt>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(SolutionDir)$(Platform)\$(Configuration)\VST3\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\VST3\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vial</TargetName>
@@ -68,24 +68,25 @@
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <AdditionalIncludeDirectories>..\..\..\third_party\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;..\..\..\third_party\VST_SDK\VST2_SDK;..\..\JuceLibraryCode;..\..\..\third_party\JUCE\modules;../../../src/common;../../../src/common/wavetable;../../../src/interface/editor_components;../../../src/interface/editor_sections;../../../src/interface/look_and_feel;../../../src/interface/wavetable;../../../src/interface/wavetable/editors;../../../src/interface/wavetable/overlays;../../../src/plugin;../../../src/synthesis/synth_engine;../../../src/synthesis/effects;../../../src/synthesis/filters;../../../src/synthesis/framework;../../../src/synthesis/lookups;../../../src/synthesis/modulators;../../../src/synthesis/modules;../../../src/synthesis/producers;../../../src/synthesis/utilities;../../../third_party;../../../third_party/firebase_cpp_sdk/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;DEBUG;_DEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_RTAS=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;DEBUG;_DEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_LV2=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AssemblerListingLocation>$(IntDir)\</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)\</ObjectFileName>
-      <ProgramDataBaseFileName>$(IntDir)\</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(IntDir)\Vial.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level2</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\third_party\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;..\..\..\third_party\VST_SDK\VST2_SDK;..\..\JuceLibraryCode;..\..\..\third_party\JUCE\modules;../../../src/common;../../../src/common/wavetable;../../../src/interface/editor_components;../../../src/interface/editor_sections;../../../src/interface/look_and_feel;../../../src/interface/wavetable;../../../src/interface/wavetable/editors;../../../src/interface/wavetable/overlays;../../../src/plugin;../../../src/synthesis/synth_engine;../../../src/synthesis/effects;../../../src/synthesis/filters;../../../src/synthesis/framework;../../../src/synthesis/lookups;../../../src/synthesis/modulators;../../../src/synthesis/modules;../../../src/synthesis/producers;../../../src/synthesis/utilities;../../../third_party;../../../third_party/firebase_cpp_sdk/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;DEBUG;_DEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_LV2=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(OutDir)\Vial.vst3</OutputFile>
+      <OutputFile>$(OutDir)\Vial.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreSpecificDefaultLibraries>libcmt.lib; msvcrt.lib;;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -103,8 +104,18 @@
       <AdditionalDependencies>firebase_auth.lib;firebase_app.lib;firebase_rest_lib.lib;flatbuffers.lib;libcurl.lib;Wldap32.lib;crypt32.lib;Vial.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>../../../third_party/firebase_cpp_sdk/libs/windows/x64/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
+    <PreBuildEvent>
+      <Command>if not exist &quot;$(OutDir)\\Vial.vst3\&quot; del /s /q &quot;$(OutDir)\\Vial.vst3&quot; &amp;&amp; mkdir &quot;$(OutDir)\\Vial.vst3&quot;
+if not exist &quot;$(OutDir)\\Vial.vst3\Contents\&quot; del /s /q &quot;$(OutDir)\\Vial.vst3\Contents&quot; &amp;&amp; mkdir &quot;$(OutDir)\\Vial.vst3\Contents&quot;
+if not exist &quot;$(OutDir)\\Vial.vst3\Contents\x86_64-win\&quot; del /s /q &quot;$(OutDir)\\Vial.vst3\Contents\x86_64-win&quot; &amp;&amp; mkdir &quot;$(OutDir)\\Vial.vst3\Contents\x86_64-win&quot;
+</Command>
+    </PreBuildEvent>
     <PostBuildEvent>
-      <Command>copy /Y &quot;$(OutDir)$(TargetFileName)&quot; &quot;%CommonProgramW6432%\VST3\$(TargetFileName)&quot;</Command>
+      <Command>copy /Y &quot;$(OutDir)\Vial.dll&quot; &quot;$(OutDir)\Vial.vst3\Contents\x86_64-win\Vial.vst3&quot;
+del /s /q &quot;$(OutDir)/Vial.vst3\Contents\moduleinfo.json&quot;
+if not exist &quot;$(OutDir)/Vial.vst3\Contents\Resources\&quot; del /s /q &quot;$(OutDir)/Vial.vst3\Contents\Resources&quot; &amp;&amp; mkdir &quot;$(OutDir)/Vial.vst3\Contents\Resources&quot;
+&quot;$(SolutionDir)$(Platform)\$(Configuration)\VST3 Manifest Helper\juce_vst3_helper.exe&quot; -create -version &quot;1.0.6&quot; -path &quot;$(OutDir)/Vial.vst3&quot; -output &quot;$(OutDir)/Vial.vst3\Contents\Resources\moduleinfo.json&quot;
+xcopy /E /H /K /R /Y /I &quot;$(OutDir)\Vial.vst3&quot; &quot;%CommonProgramW6432%\VST3\Vial.vst3\&quot;</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -118,24 +129,25 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <AdditionalIncludeDirectories>..\..\..\third_party\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;..\..\..\third_party\VST_SDK\VST2_SDK;..\..\JuceLibraryCode;..\..\..\third_party\JUCE\modules;../../../src/common;../../../src/common/wavetable;../../../src/interface/editor_components;../../../src/interface/editor_sections;../../../src/interface/look_and_feel;../../../src/interface/wavetable;../../../src/interface/wavetable/editors;../../../src/interface/wavetable/overlays;../../../src/plugin;../../../src/synthesis/synth_engine;../../../src/synthesis/effects;../../../src/synthesis/filters;../../../src/synthesis/framework;../../../src/synthesis/lookups;../../../src/synthesis/modulators;../../../src/synthesis/modules;../../../src/synthesis/producers;../../../src/synthesis/utilities;../../../third_party;../../../third_party/firebase_cpp_sdk/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_RTAS=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_LV2=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AssemblerListingLocation>$(IntDir)\</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)\</ObjectFileName>
-      <ProgramDataBaseFileName>$(IntDir)\</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(IntDir)\Vial.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level2</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\third_party\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;..\..\..\third_party\VST_SDK\VST2_SDK;..\..\JuceLibraryCode;..\..\..\third_party\JUCE\modules;../../../src/common;../../../src/common/wavetable;../../../src/interface/editor_components;../../../src/interface/editor_sections;../../../src/interface/look_and_feel;../../../src/interface/wavetable;../../../src/interface/wavetable/editors;../../../src/interface/wavetable/overlays;../../../src/plugin;../../../src/synthesis/synth_engine;../../../src/synthesis/effects;../../../src/synthesis/filters;../../../src/synthesis/framework;../../../src/synthesis/lookups;../../../src/synthesis/modulators;../../../src/synthesis/modules;../../../src/synthesis/producers;../../../src/synthesis/utilities;../../../third_party;../../../third_party/firebase_cpp_sdk/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=0;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=0;JucePlugin_Build_Unity=0;JucePlugin_Build_LV2=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(OutDir)\Vial.vst3</OutputFile>
+      <OutputFile>$(OutDir)\Vial.dll</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>false</GenerateDebugInformation>
@@ -156,8 +168,18 @@
       <AdditionalDependencies>firebase_auth.lib;firebase_app.lib;firebase_rest_lib.lib;flatbuffers.lib;libcurl.lib;Wldap32.lib;crypt32.lib;Vial.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>../../../third_party/firebase_cpp_sdk/libs/windows/x64/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Lib>
+    <PreBuildEvent>
+      <Command>if not exist &quot;$(OutDir)\\Vial.vst3\&quot; del /s /q &quot;$(OutDir)\\Vial.vst3&quot; &amp;&amp; mkdir &quot;$(OutDir)\\Vial.vst3&quot;
+if not exist &quot;$(OutDir)\\Vial.vst3\Contents\&quot; del /s /q &quot;$(OutDir)\\Vial.vst3\Contents&quot; &amp;&amp; mkdir &quot;$(OutDir)\\Vial.vst3\Contents&quot;
+if not exist &quot;$(OutDir)\\Vial.vst3\Contents\x86_64-win\&quot; del /s /q &quot;$(OutDir)\\Vial.vst3\Contents\x86_64-win&quot; &amp;&amp; mkdir &quot;$(OutDir)\\Vial.vst3\Contents\x86_64-win&quot;
+</Command>
+    </PreBuildEvent>
     <PostBuildEvent>
-      <Command>copy /Y &quot;$(OutDir)$(TargetFileName)&quot; &quot;%CommonProgramW6432%\VST3\$(TargetFileName)&quot;</Command>
+      <Command>copy /Y &quot;$(OutDir)\Vial.dll&quot; &quot;$(OutDir)\Vial.vst3\Contents\x86_64-win\Vial.vst3&quot;
+del /s /q &quot;$(OutDir)/Vial.vst3\Contents\moduleinfo.json&quot;
+if not exist &quot;$(OutDir)/Vial.vst3\Contents\Resources\&quot; del /s /q &quot;$(OutDir)/Vial.vst3\Contents\Resources&quot; &amp;&amp; mkdir &quot;$(OutDir)/Vial.vst3\Contents\Resources&quot;
+&quot;$(SolutionDir)$(Platform)\$(Configuration)\VST3 Manifest Helper\juce_vst3_helper.exe&quot; -create -version &quot;1.0.6&quot; -path &quot;$(OutDir)/Vial.vst3&quot; -output &quot;$(OutDir)/Vial.vst3\Contents\Resources\moduleinfo.json&quot;
+xcopy /E /H /K /R /Y /I &quot;$(OutDir)\Vial.vst3&quot; &quot;%CommonProgramW6432%\VST3\Vial.vst3\&quot;</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -174,5 +196,4 @@
     <ResourceCompile Include=".\resources.rc"/>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
-  <ImportGroup Label="ExtensionTargets"/>
 </Project>

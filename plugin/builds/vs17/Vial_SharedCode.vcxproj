@@ -66,21 +66,22 @@
       <Optimization>Disabled</Optimization>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <AdditionalIncludeDirectories>..\..\..\third_party\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;..\..\..\third_party\VST_SDK\VST2_SDK;..\..\JuceLibraryCode;..\..\..\third_party\JUCE\modules;../../../src/common;../../../src/common/wavetable;../../../src/interface/editor_components;../../../src/interface/editor_sections;../../../src/interface/look_and_feel;../../../src/interface/wavetable;../../../src/interface/wavetable/editors;../../../src/interface/wavetable/overlays;../../../src/plugin;../../../src/synthesis/synth_engine;../../../src/synthesis/effects;../../../src/synthesis/filters;../../../src/synthesis/framework;../../../src/synthesis/lookups;../../../src/synthesis/modulators;../../../src/synthesis/modules;../../../src/synthesis/producers;../../../src/synthesis/utilities;../../../third_party;../../../third_party/firebase_cpp_sdk/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;DEBUG;_DEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=1;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_RTAS=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=1;JucePlugin_Build_Unity=0;JUCE_SHARED_CODE=1;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;DEBUG;_DEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=1;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=1;JucePlugin_Build_Unity=0;JucePlugin_Build_LV2=0;JUCE_SHARED_CODE=1;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AssemblerListingLocation>$(IntDir)\</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)\</ObjectFileName>
-      <ProgramDataBaseFileName>$(IntDir)\</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(IntDir)\Vial.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level2</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\third_party\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;..\..\..\third_party\VST_SDK\VST2_SDK;..\..\JuceLibraryCode;..\..\..\third_party\JUCE\modules;../../../src/common;../../../src/common/wavetable;../../../src/interface/editor_components;../../../src/interface/editor_sections;../../../src/interface/look_and_feel;../../../src/interface/wavetable;../../../src/interface/wavetable/editors;../../../src/interface/wavetable/overlays;../../../src/plugin;../../../src/synthesis/synth_engine;../../../src/synthesis/effects;../../../src/synthesis/filters;../../../src/synthesis/framework;../../../src/synthesis/lookups;../../../src/synthesis/modulators;../../../src/synthesis/modules;../../../src/synthesis/producers;../../../src/synthesis/utilities;../../../third_party;../../../third_party/firebase_cpp_sdk/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;DEBUG;_DEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=1;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=1;JucePlugin_Build_Unity=0;JucePlugin_Build_LV2=0;JUCE_SHARED_CODE=1;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
       <OutputFile>$(OutDir)\Vial.lib</OutputFile>
@@ -107,21 +108,22 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <AdditionalIncludeDirectories>..\..\..\third_party\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;..\..\..\third_party\VST_SDK\VST2_SDK;..\..\JuceLibraryCode;..\..\..\third_party\JUCE\modules;../../../src/common;../../../src/common/wavetable;../../../src/interface/editor_components;../../../src/interface/editor_sections;../../../src/interface/look_and_feel;../../../src/interface/wavetable;../../../src/interface/wavetable/editors;../../../src/interface/wavetable/overlays;../../../src/plugin;../../../src/synthesis/synth_engine;../../../src/synthesis/effects;../../../src/synthesis/filters;../../../src/synthesis/framework;../../../src/synthesis/lookups;../../../src/synthesis/modulators;../../../src/synthesis/modules;../../../src/synthesis/producers;../../../src/synthesis/utilities;../../../third_party;../../../third_party/firebase_cpp_sdk/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=1;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_RTAS=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=1;JucePlugin_Build_Unity=0;JUCE_SHARED_CODE=1;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=1;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=1;JucePlugin_Build_Unity=0;JucePlugin_Build_LV2=0;JUCE_SHARED_CODE=1;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <AssemblerListingLocation>$(IntDir)\</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)\</ObjectFileName>
-      <ProgramDataBaseFileName>$(IntDir)\</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName>$(IntDir)\Vial.pdb</ProgramDataBaseFileName>
       <WarningLevel>Level2</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\third_party\JUCE\modules\juce_audio_processors\format_types\VST3_SDK;..\..\..\third_party\VST_SDK\VST2_SDK;..\..\JuceLibraryCode;..\..\..\third_party\JUCE\modules;../../../src/common;../../../src/common/wavetable;../../../src/interface/editor_components;../../../src/interface/editor_sections;../../../src/interface/look_and_feel;../../../src/interface/wavetable;../../../src/interface/wavetable/editors;../../../src/interface/wavetable/overlays;../../../src/plugin;../../../src/synthesis/synth_engine;../../../src/synthesis/effects;../../../src/synthesis/filters;../../../src/synthesis/framework;../../../src/synthesis/lookups;../../../src/synthesis/modulators;../../../src/synthesis/modules;../../../src/synthesis/producers;../../../src/synthesis/utilities;../../../third_party;../../../third_party/firebase_cpp_sdk/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_WINDOWS;NDEBUG;JUCE_OPENGL3=1;REQUIRE_AUTH=1;WINVER=0x0601;_WIN32_WINNT=0x0601;_ENABLE_EXTENDED_ALIGNED_STORAGE;INTEL_IPP=1;__SSE2__=1;JUCER_VS2017_B927B5AD=1;JUCE_APP_VERSION=1.0.6;JUCE_APP_VERSION_HEX=0x10006;JucePlugin_Build_VST=1;JucePlugin_Build_VST3=1;JucePlugin_Build_AU=0;JucePlugin_Build_AUv3=0;JucePlugin_Build_AAX=0;JucePlugin_Build_Standalone=1;JucePlugin_Build_Unity=0;JucePlugin_Build_LV2=0;JUCE_SHARED_CODE=1;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
       <OutputFile>$(OutDir)\Vial.lib</OutputFile>
@@ -1217,10 +1219,37 @@
     <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_formats\juce_audio_formats.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\juce_LV2_Wrapper.cpp">
+    <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\RTAS\juce_RTAS_DigiCode1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\RTAS\juce_RTAS_DigiCode2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\RTAS\juce_RTAS_DigiCode3.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\RTAS\juce_RTAS_WinUtilities.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\RTAS\juce_RTAS_Wrapper.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\utility\juce_PluginUtilities.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_3.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_4.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_RTAS_utils.cpp">
       <ExcludedFromBuild>true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\juce_audio_plugin_client_utils.cpp">
@@ -2748,15 +2777,28 @@
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_basics.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_devices.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_formats.cpp"/>
+    <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_plugin_client_RTAS_1.cpp"/>
+    <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_plugin_client_RTAS_2.cpp"/>
+    <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_plugin_client_RTAS_3.cpp"/>
+    <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_plugin_client_RTAS_4.cpp"/>
+    <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_plugin_client_RTAS_utils.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_plugin_client_utils.cpp"/>
-    <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_processors.cpp"/>
+    <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_processors.cpp">
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_audio_utils.cpp"/>
-    <ClCompile Include="..\..\JuceLibraryCode\include_juce_core.cpp"/>
+    <ClCompile Include="..\..\JuceLibraryCode\include_juce_core.cpp">
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_data_structures.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_dsp.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_events.cpp"/>
-    <ClCompile Include="..\..\JuceLibraryCode\include_juce_graphics.cpp"/>
-    <ClCompile Include="..\..\JuceLibraryCode\include_juce_gui_basics.cpp"/>
+    <ClCompile Include="..\..\JuceLibraryCode\include_juce_graphics.cpp">
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\JuceLibraryCode\include_juce_gui_basics.cpp">
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_gui_extra.cpp"/>
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_opengl.cpp"/>
   </ItemGroup>
@@ -3187,22 +3229,7 @@
     <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_formats\format\juce_MemoryMappedAudioFormatReader.h"/>
     <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_formats\sampler\juce_Sampler.h"/>
     <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_formats\juce_audio_formats.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\atom-util.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\atom.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\buf-size.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\instance-access.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\lv2.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\lv2_external_ui.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\lv2_programs.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\midi.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\options.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\port-props.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\presets.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\state.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\time.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\ui.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\units.h"/>
-    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\LV2\includes\urid.h"/>
+    <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\RTAS\juce_RTAS_DigiCode_Header.h"/>
     <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\utility\juce_CarbonVisibility.h"/>
     <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\utility\juce_CheckSettingMacros.h"/>
     <ClInclude Include="..\..\..\third_party\JUCE\modules\juce_audio_plugin_client\utility\juce_CreatePluginFilter.h"/>
@@ -3842,7 +3869,7 @@
     <None Include="..\..\..\third_party\JUCE\modules\juce_core\native\java\README.txt"/>
     <None Include="..\..\..\third_party\JUCE\modules\juce_graphics\image_formats\jpglib\changes to libjpeg for JUCE.txt"/>
     <None Include="..\..\..\third_party\JUCE\modules\juce_graphics\image_formats\pnglib\libpng_readme.txt"/>
+    <None Include="..\..\JuceLibraryCode\include_juce_audio_plugin_client_RTAS.r"/>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
-  <ImportGroup Label="ExtensionTargets"/>
 </Project>
